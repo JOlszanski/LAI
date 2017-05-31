@@ -1,0 +1,20 @@
+.input_name {
+  font-weight: bold;
+}
+
+form.horizontal-form {
+  display: block;
+  min-height: 50px;
+}
+
+.horizontal-form .form_section {
+  float: left;
+  margin-left: 10px;
+}
+
+#userFrom input[type="checkbox"]{
+  margin-left: 10px;
+}
+#userFrom tr:hover{
+  background-color: #fff;
+}

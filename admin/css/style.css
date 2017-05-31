@@ -1,0 +1,383 @@
+/*
+*   DARK BG - #4B5159
+*   BRIGHT FONT - white (:v)
+*   MAIN THEME - #3498db
+*
+*
+*/
+
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 1200px;
+}
+
+/*TOPPANEL*/
+
+#toppanel {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 2px rgba(0,0,0,.05),0 1px 0 rgba(0,0,0,.05);
+    height: 50px;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+}
+
+#toppanel section {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#toppanel a {
+    text-decoration: none;
+    color: black;
+}
+
+#toppanel section.left {
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #EAEAEA;
+}
+
+#toppanel section.right {
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 1px solid #EAEAEA;
+    float: right;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+#toppanel section:hover {
+    background-color:  #F1F2F4;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.hideshow_sidebar {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; ;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    float: left;
+}
+
+.homepage {
+    line-height: 50px;
+    font-size: 12px;
+    width: calc(10% - 50px);
+    text-align: center;
+    float: left;
+}
+
+.homepage a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.logout a {
+    display: block;
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.logout:hover i {
+    color: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.user a {
+    display: block;
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.notifications {
+    cursor: pointer;
+}
+
+/*LEFT-SIDEBAR*/
+
+#left-sidebar {
+    position: fixed;
+    top: 50px; height: calc(100% - 50px);
+    width: 10%;
+    border-right: 1px solid #4B5159;
+    background-color: #4B5159;
+    z-index: 10000;
+}
+
+#left-sidebar ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#left-sidebar ul li {
+    width: 100%;
+    list-style-type: none;
+}
+
+#left-sidebar ul li a {
+    color: white;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 11px 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#left-sidebar ul li.active,
+#left-sidebar ul li:hover {
+    border-left: 4px solid #3498db;
+}
+
+#left-sidebar ul li.active a,
+#left-sidebar ul li:hover a {
+    padding-left: 10px;
+}
+
+/*CONTAINER AND ALL BENEATH*/
+
+#container {
+    position: absolute;
+    padding: 20px;
+    left: 10%; width: 90%;
+    top: 50px; min-height: calc(100% - 50px);
+    background-color: #F1F2F4;
+}
+
+/* GENERAL VIEW */
+
+  /* TABLE */
+  .default-table {
+    border: 1px solid #e4e4e4;
+  }
+
+  .default-table, .default-table tbody tr td{
+    border: 1px solid #e4e4e4;
+  }
+
+  .default-table th{
+    border: 3px solid #e4e4e4;
+  }
+
+  .default-table thead tr th, .default-table tbody tr td{
+    background: white;
+    padding: 8px;
+    min-height: 10px;
+  }
+
+  /* SECTION */
+  .default-section {
+
+  }
+
+
+/* USER VIEW */
+
+/* APPLICATIONS VIEW */
+.applications {
+  border-right: none;
+  border-bottom: none;
+}
+
+.applications tbody tr td:last-child {
+  border: none;
+  background-color: transparent;
+}
+
+.applications tbody tr:hover td {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.applications tbody tr:hover td:last-child {
+  background-color: transparent;
+}
+
+.applications tbody tr td:nth-child(10) {
+  background-color: rgba(39, 174, 96, 0.5);
+}
+
+/* GROUPS */
+.group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.group_section {
+  background-color: #A2A2A2;
+  height: 75px;
+  min-width: 750px;
+  border: 3px solid #CCCCCC;
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.group_section .group_vertical_separator{
+  float: left;
+  padding: 5px 10px;
+  border-right: 1px solid #CCCCCC;
+  height: 100%;
+}
+
+.group_section .group_id {
+  font-size: 20px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.group_name, .group_module, .group_status, .group_years, .group_days, .group_students {
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.group_section .group_additional {
+  height: 70%;
+}
+
+.group_section .group_start, .group_section .group_end {
+  float: left;
+}
+
+.group_section .group_end {
+  padding-left: 10px;
+}
+
+.group_section .group_vertical_separator:last-child, .group_section .group_vertical_separator:first-child{
+  border: none;
+}
+
+.group_vertical_separator:first-child {
+  width: 5%
+}
+.group_vertical_separator:nth-child(2) {
+  width: 15%;
+}
+.group_vertical_separator:nth-child(3) {
+  width: 25%;
+}
+.group_vertical_separator:last-child {
+  width: 55%;
+  line-height:normal;
+}
+
+.group_table {
+  width: 100%;
+}
+
+.group_table tr td:first-child { width: 5%; }
+.group_table tr td:nth-child(2) { width: 15%; }
+.group_table tr td:nth-child(3) { width: 20%; }
+.group_table tr td:nth-child(4) { width: 30%; }
+.group_table tr td:nth-child(5) { width: 20%; }
+
+.addgroup {
+  font-size: 19px;
+  border: 3px solid #e4e4e4;
+  padding: 4px 6px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.group_options {
+  display: block !important;
+  top: 5px;
+  left: 2px;
+  position: absolute !important;
+}
+
+.option_select {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  display: none;
+}
+
+.payments-table {
+  width: 100%;
+  position: relative;
+}
+
+.payments-table tr {
+  position: relative;;
+}
+
+.payment-actions {
+  display: block;
+  float: left;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 17px;
+}
+
+.payment-actions:hover {
+  background-color: #e4e4e4;
+}
+
+.rowofform {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#addpayment {
+  margin: 50px auto;
+  display: block;
+}
+
+#addrowofform {
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+#addrowofform:hover {
+  color: rgba(0,0,0,0.7);
+  background-color: #e4e4e4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.students-table tr:hover td{
+  cursor: pointer;
+  background-color: #e4e4e4;
+}
+
+.associations-section {
+  width: 40%;
+  float: left;
+}
+
+.student-payments-table {
+  width: 60%;
+}
+
+.contact-section {
+  padding-top: 20px;
+}

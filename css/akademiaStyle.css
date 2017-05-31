@@ -1,0 +1,79 @@
+.akademiaWrapper > p {
+    line-height: 25px;
+    font-size: 20px;
+}
+.akademiaParallax {
+    background: url("../img/parallax1.png") fixed 100%;
+}
+.akademiaParallaxInner {
+    padding: 8%;
+    color: white;
+    text-transform: uppercase;
+}
+.akademiaRegister {
+    background: #f46b45; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f46b45 , #eea849); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f46b45 , #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    margin-top: 30px;
+    height: 200px;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+.akademiaRegister a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .akademiaCisco {
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .akademiaCisco {
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (min-width: 922px) and (max-width: 1200px) {
+    .akademiaCisco {
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (min-width: 1200px) {
+    .akademiaCiscoWWW {
+        margin-top: 15px;
+        
+    }
+    .akademiaCisco, .akademiaWWW {
+        height: 230px;
+        font-size: 20px;
+    }
+    .akademiaCisco {
+        box-sizing: border-box;
+        border: none;
+        border-right: 1px solid black;
+    }
+}
+
+

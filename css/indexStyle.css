@@ -1,0 +1,346 @@
+/*GENERAL SETTINGS*/
+
+html, body, header, main, nav, ul, li, a, article, footer, figure, img {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #ecf0f1;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER AND IMG*/
+
+header {
+    width: 100%;
+    height: 15%;
+}
+figure {
+    height: 100%;
+    width: 100%;
+}
+figure img#headerImg2 {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+figure img#headerImg4 {
+    height: 100%;
+    width: 100%;
+}
+
+/*MAIN - MENU AND CHANGING CONTENTS DIV*/
+
+main {
+    min-height: 85vh;
+    background-color: #dee5e7;
+    padding-bottom: 5vh !important;
+}
+article {
+    margin-top: 30px;
+}
+#topNav ul {
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 1000;
+}
+#topNav ul li {
+    line-height: 30px;
+    background-color: #222222;
+    color: #f25532;
+    border-top: 1px solid rgba(242, 85, 50, 0.5);
+    display: none;
+}
+#topNav ul li a {
+    color: #f25532;
+}
+
+#topNav ul li a{
+    text-decoration: none;
+}
+.menuBtn {
+    border: none !important;
+    display: block !important;
+}
+
+/*FOOTER AND SUBCONTENTS*/
+
+footer {
+    height: 30%;
+    background-color: #222222;
+}
+footer .row {
+    padding: 0;
+    margin: 0;
+}
+#botContainer {
+    height: 100%;
+}
+.fContents {
+    min-height: 230px;
+    margin: 20px 0 10px 0;
+    color: #f25532;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bdc3c7;
+    font-size: 17px;
+}
+#fNav {
+    border: none;
+    height: 230px;
+}
+#bottomNav {
+    height: 100%;
+}
+#bottomNav ul {
+    padding: 0;
+    list-style-type: none;
+    height: 100%;
+}
+#bottomNav ul li {
+    background-color: #222222;
+    height: 20%;
+    line-height: 250%;
+    vertical-align: middle;
+}
+#bottomNav ul li a {
+    display: block;
+    color: #f25532;
+}
+
+/*NEWSLETTER - SUBCONTENT OF FOOTER*/
+
+.newsletterInputAroundsDiv {
+    display: block;
+    margin: 20px 0 20px 0;
+    height: 40px;
+}
+
+/*CONTACT - SUBCONTENT OF FOOTER*/
+
+.contactPar {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/*COPYRIGHTS - SUBCONTENT OF FOOTER*/
+
+.copyrights {
+    margin: 20px;
+    text-align: center;
+    color: #726c65;
+}
+
+div.viw.ng-enter {
+    animation: slideInRight 0.5s;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 100% !important
+    }
+    article {
+        margin-top: 0;
+    }
+    #topNav {
+        height: 50px;
+    }
+    #topNav ul {
+        font-size: 17px;
+        position: absolute;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        z-index: 1000;
+    }
+    #topNav ul li {
+        line-height: 50px;
+        background-color: #222222;
+        color: #f25532;
+        border-top: 1px solid rgba(242, 85, 50, 0.5);
+        display: none;
+    }
+    #topNav ul li a {
+        color: #f25532;
+    }
+    .menuBtn {
+        border: none !important;
+        display: block !important;
+    }
+    .activeTopMenuItem {
+        line-height: 30px;
+        background-color: #222222;
+        color: #f25532;
+        border-top: 1px solid rgba(242, 85, 50, 0.5);
+    }
+    .activeTopMenuItem a {
+        color: #f25532;
+    }
+    .menuTopItem {
+        display: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    figure img#headerImg2 {
+        display: block;
+    }
+    figure img#headerImg4 {
+        display: none;
+    }
+    article {
+        margin-top: 0;
+    }
+    #newsletter {
+        border: none;
+    }
+    .fContents {
+        border-bottom: none;
+    }
+    #contact {
+        border-right: 1px solid #bdc3c7;
+    }
+    #topNav {
+        height: 50px;
+    }
+    #topNav ul {
+        position: static;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #222222;
+    }
+    #topNav ul li {
+        border: none;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        float: right;
+        font-size: 17px;
+    }
+    #topNav ul li a {
+        color: #bdc3c7;
+        padding: 0 20px;
+        display: block;
+        height: 100%;
+        transition: 0.3s;
+    }
+    #topNav ul li a:hover {
+        transition: 0.3s;
+        color: #f25532;
+    }
+    .activeTopMenuItem {
+        float: left !important;
+        transition: 0.3s;
+    }
+    .activeTopMenuItem a {
+        color: #f25532 !important;
+        text-decoration: underline;
+    }
+    .menuTopItem {
+        display: none;
+    }
+    .menuBtn {
+        display: none !important;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    figure img#headerImg2 {
+        display: block;
+    }
+    figure img#headerImg4 {
+        display: none;
+    }
+    article {
+        margin-top: 0;
+    }
+    .fContents {
+        min-height: 230px;
+        margin: 20px 0 10px 0;
+        color: #f25532;
+        text-align: center;
+        box-sizing: border-box;
+        border-right: 1px solid #bdc3c7;
+        border-bottom: none;
+        font-size: 17px;
+    }
+    .fContents:last-child {
+        border: none;
+    }
+    .contactPar:nth-child(2) {
+        margin-top: 40px;
+    }
+    #topNav {
+        height: 50px;
+    }
+    #topNav ul {
+        position: static;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #222222;
+    }
+    #topNav ul li {
+        border: none;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        float: right;
+        font-size: 17px;
+    }
+    #topNav ul li a {
+        color: #bdc3c7;
+        padding: 0 20px;
+        display: block;
+        height: 100%;
+        transition: 0.3s;
+    }
+    #topNav ul li a:hover {
+        transition: 0.3s;
+        color: #f25532;
+    }
+    .activeTopMenuItem {
+        float: left !important;
+        transition: 0.3s;
+    }
+    .activeTopMenuItem a {
+        color: #f25532 !important;
+        text-decoration: underline;
+    }
+    .menuTopItem {
+        display: none;
+    }
+    .menuBtn {
+        display: none !important;
+    }
+}
